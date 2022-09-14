@@ -2,7 +2,7 @@
 
 namespace EmployeeLib
 {
-    public class CEO : Employee
+    public class CEO : EmployeeBase
     {
         public override void CalculatePerHourRate(int rank)
         {
@@ -11,10 +11,6 @@ namespace EmployeeLib
             Salary = baseAmount * rank;
         }
 
-        public override void AssignManager(Employee manager)
-        {
-            throw new InvalidOperationException("The CEO has no manager.");
-        }
 
         public void GeneratePerformanceReview()
         {
