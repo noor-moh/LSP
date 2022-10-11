@@ -4,7 +4,6 @@ namespace EmployeeLib
 {
     public class Manager : EmployeeBase
     {
-        public EmployeeBase Supervisor { get; set; }
 
         public override void CalculatePerHourRate(int rank)
         {
